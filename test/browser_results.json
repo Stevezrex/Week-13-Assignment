@@ -1,0 +1,374 @@
+[
+ {
+  "test": 18,
+  "name": "a learner page load makes 7 requests",
+  "pass": true,
+  "note": "/, /style.css, /fonts/Fredoka.woff2, /fonts/Nunito.woff2, /data.js, /app.js, /img/sprite.svg"
+ },
+ {
+  "test": 5,
+  "name": "a change shows Saved at once (kept on this device)",
+  "pass": true,
+  "note": "Saved"
+ },
+ {
+  "test": 18,
+  "name": "no server save while the learner stays on the task (6 s of waiting)",
+  "pass": true,
+  "note": "0"
+ },
+ {
+  "test": 5,
+  "name": "Next task saves to the server and shows Saved",
+  "pass": true,
+  "note": "1 saves, Saved"
+ },
+ {
+  "test": 5,
+  "name": "offline, a change is still kept on the device",
+  "pass": true,
+  "note": "Saved"
+ },
+ {
+  "test": 5,
+  "name": "offline, Next task shows Waiting for signal",
+  "pass": true,
+  "note": "Waiting for signal"
+ },
+ {
+  "test": 5,
+  "name": "returning online shows Saved",
+  "pass": true,
+  "note": "Saved"
+ },
+ {
+  "test": 18,
+  "name": "unchanged answers trigger 0 saves",
+  "pass": true,
+  "note": "saves before 5 after 5"
+ },
+ {
+  "test": 18,
+  "name": "tab focus and timers trigger 0 requests",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 5,
+  "name": "hiding the page with unsaved answers sends one save, and a second hide event sends none",
+  "pass": true,
+  "note": "5 -> 6 -> 6"
+ },
+ {
+  "test": 5,
+  "name": "an unsaved change reaches the server after 5 minutes at most",
+  "pass": true,
+  "note": "0 then 1"
+ },
+ {
+  "test": 7,
+  "name": "the Continue dialog carries the confirm line",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 7,
+  "name": "after Continue stage 1 shows a tick and stage 2 is current",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 6,
+  "name": "closing and reopening on another browser resumes the stage and locks",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 6,
+  "name": "the workspace pane rebuilds the folders from the saved answers",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 4,
+  "name": "the first device shows the device message and goes read only",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 8,
+  "name": "after Reset the button reads Reset used and is disabled",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 8,
+  "name": "Reset restarts at stage 1 with no ticks",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 16,
+  "name": "no CSP violation in the resume flow",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 5,
+  "name": "the top bar relabels to Submit and log out once Stage 4 is complete",
+  "pass": true,
+  "note": "Submit and log out"
+ },
+ {
+  "test": 18,
+  "name": "a paced scripted attempt (one save per task, 3 locks, start, begin, submit) stays within 50 calls",
+  "pass": true,
+  "note": "20 calls"
+ },
+ {
+  "test": 16,
+  "name": "zero CSP violations across every screen of the run",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 16,
+  "name": "no console errors in the run",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 17,
+  "name": "at 360 px the page fits the width on every screen",
+  "pass": true,
+  "note": "{}"
+ },
+ {
+  "test": 17,
+  "name": "tap targets measure 44 px or more on every screen",
+  "pass": true,
+  "note": "{}"
+ },
+ {
+  "test": 17,
+  "name": "text contrast measures 4.5:1 or higher on every screen (818 text nodes)",
+  "pass": true,
+  "note": "{}"
+ },
+ {
+  "test": 17,
+  "name": "body text is 16 px or larger",
+  "pass": true,
+  "note": "{}"
+ },
+ {
+  "test": 10,
+  "name": "the keyed set entered through the UI scores 100.00 on the server",
+  "pass": true,
+  "note": "100"
+ },
+ {
+  "test": 17,
+  "name": "a radio question works by keyboard with the visible focus ring (3 px outline, sun ring)",
+  "pass": true,
+  "note": "3px solid rgb(255, 209, 102) 0px 0px 0px 6px"
+ },
+ {
+  "test": 17,
+  "name": "the folder form works by keyboard",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 17,
+  "name": "buttons show the focus ring on keyboard focus",
+  "pass": true,
+  "note": "3px solid rgb(255, 209, 102) 0px 0px 0px 6px"
+ },
+ {
+  "test": 17,
+  "name": "a dropdown works by keyboard",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 16,
+  "name": "no CSP violation in the keyboard run",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 17,
+  "name": "on a phone the Workspace and Reference panes open at the top and Task returns to the same place",
+  "pass": true,
+  "note": "260 0 0 260"
+ },
+ {
+  "test": 16,
+  "name": "no CSP violation in the scene run at 360x640",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 16,
+  "name": "no CSP violation in the scene run at 360x720",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 16,
+  "name": "no CSP violation in the scene run at 390x844",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 17,
+  "name": "all eight scenes render at 360x640, 360x720 and 390x844 with floor, mat and objects in place",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 17,
+  "name": "under forced-colors the page renders, the scene hides and borders are 2 px",
+  "pass": true,
+  "note": "{'fc': True, 'scene': 'none', 'border': '2px'}"
+ },
+ {
+  "test": 17,
+  "name": "the page renders with prefers-reduced-transparency (rule present, media feature emulated: True)",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 18,
+  "name": "an assessor page load makes 6 requests",
+  "pass": true,
+  "note": "/assessor.html, /style.css, /assessor.js, /fonts/Nunito.woff2, /img/sprite.svg, /fonts/Fredoka.woff2"
+ },
+ {
+  "test": 12,
+  "name": "a wrong password shows the message on the page",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 18,
+  "name": "an assessor visit makes 2 calls (login and list)",
+  "pass": true,
+  "note": "['/api/assessor/login', '/api/assessor/list']"
+ },
+ {
+  "test": 13,
+  "name": "test accounts stay hidden until Show test accounts is ticked",
+  "pass": true,
+  "note": "2 then 3"
+ },
+ {
+  "test": 13,
+  "name": "learners view shows attempts started of 3, best score and In progress",
+  "pass": true,
+  "note": "Select\tName \u25b2\tEmail\tAttempts\tScore  \tSeed Amaka\tseedamaka@example.com\t2 of 3\t2.00  \tSeed Gamma\tseedgamma@test.example\t1 of 3\tIn progress  \tSeed Zed\tseedzed@example.com\t2 of 3\t100.00"
+ },
+ {
+  "test": 13,
+  "name": "the All attempts view lists one row per attempt",
+  "pass": true,
+  "note": "5"
+ },
+ {
+  "test": 13,
+  "name": "search keeps matching rows",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 13,
+  "name": "a second tap on a column header reverses the order",
+  "pass": true,
+  "note": "Seed Amaka / Seed Zed"
+ },
+ {
+  "test": 13,
+  "name": "sorting by score orders the rows",
+  "pass": true,
+  "note": "['In progress', '2.00', '100.00']"
+ },
+ {
+  "test": 13,
+  "name": "selection survives a view change and ticks the learner in both views",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 13,
+  "name": "the selection bar counts the selected rows",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 14,
+  "name": "Download selected is named week13_scores_YYYYMMDD.csv",
+  "pass": true,
+  "note": "week13_scores_20261119.csv"
+ },
+ {
+  "test": 14,
+  "name": "the file starts with a byte order mark and uses CRLF line ends",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 14,
+  "name": "header name,email,score and one row per ticked learner",
+  "pass": true,
+  "note": "['name,email,score', '\"Seed Zed\",\"seedzed@example.com\",\"100.00\"', '']"
+ },
+ {
+  "test": 14,
+  "name": "Download all carries one row per learner the checkbox shows, whatever the search says (23)",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 14,
+  "name": "downloads make 0 extra calls",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 14,
+  "name": "Download all leaves test accounts out when the box is clear and ignores the search",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 14,
+  "name": "a name or email that starts with = + - @ or tab carries a tab prefix inside the quotes",
+  "pass": true,
+  "note": "['name,email,score', '\"\\t\\tTab\",\"t@x.com\",\"\"', '\"\\t+Plus\",\"\\t-minus@x.com\",\"\"', '\"\\t=cmd\",\"a@x.com\",\"50.00\"', '\"\\t@At \"\"Quote\"\", Name\",\"q@x.com\",\"78.50\"', '']"
+ },
+ {
+  "test": 14,
+  "name": "inner quotes are doubled and open attempts leave the score empty",
+  "pass": true,
+  "note": "['name,email,score', '\"\\t\\tTab\",\"t@x.com\",\"\"', '\"\\t+Plus\",\"\\t-minus@x.com\",\"\"', '\"\\t=cmd\",\"a@x.com\",\"50.00\"', '\"\\t@At \"\"Quote\"\", Name\",\"q@x.com\",\"78.50\"', '']"
+ },
+ {
+  "test": 17,
+  "name": "the assessor page fits 360 px, with 44 px targets and 4.5:1 contrast",
+  "pass": true,
+  "note": "{'overflowX': 0, 'small': [], 'low': [], 'bodyText': [], 'texts': 15}"
+ },
+ {
+  "test": 13,
+  "name": "on a phone each row is a stacked card with name, email and one attempts line",
+  "pass": true,
+  "note": ""
+ },
+ {
+  "test": 16,
+  "name": "no CSP violation on the assessor page",
+  "pass": true,
+  "note": ""
+ }
+]
